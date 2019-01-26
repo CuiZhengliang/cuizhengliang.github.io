@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -38,9 +45,22 @@
 
 
 
-  
-  
-  <link href="/cuizhengliang.github.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="/cuizhengliang.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/cuizhengliang.github.io/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/cuizhengliang.github.io/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/cuizhengliang.github.io/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/cuizhengliang.github.io/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/cuizhengliang.github.io/images/logo.svg?v=6.7.0" color="#222">
 
 
 
@@ -48,65 +68,18 @@
 
 
 
-<link href="/cuizhengliang.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/cuizhengliang.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/cuizhengliang.github.io/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/cuizhengliang.github.io/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/cuizhengliang.github.io/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/cuizhengliang.github.io/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="崔正亮">
-<meta name="keywords" content="CuiZhengliang">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="https://cuizhengliang.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="崔正亮">
-<meta property="og:locale" content="default">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="崔正亮">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/cuizhengliang.github.io/',
     scheme: 'Muse',
-    version: '5.1.4',
+    version: '6.7.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -118,12 +91,37 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="崔正亮">
+<meta name="keywords" content="CuiZhengliang">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://cuizhengliang.github.io/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="崔正亮">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="崔正亮">
+
+
+
+
+
 
   <link rel="canonical" href="https://cuizhengliang.github.io/">
 
 
 
-
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Hexo</title>
   
@@ -135,9 +133,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -150,7 +177,7 @@
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -160,13 +187,12 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -174,45 +200,89 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/cuizhengliang.github.io/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/cuizhengliang.github.io/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            Tags
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/cuizhengliang.github.io/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -220,12 +290,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -238,6 +316,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -247,7 +327,7 @@
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CuiZhengliang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="崔正亮">
       <meta itemprop="image" content="/cuizhengliang.github.io/images/avatar.gif">
     </span>
 
@@ -262,11 +342,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/cuizhengliang.github.io/2018/11/29/Python爬虫/" itemprop="url">Python爬虫</a></h1>
+                
+                <a href="/cuizhengliang.github.io/2018/11/29/Python爬虫/" class="post-title-link" itemprop="url">Python爬虫</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -274,19 +363,37 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T00:00:00+08:00">
-                2018-11-29
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-11-29 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-29T00:00:00+08:00">2018-11-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-26 11:35:53" itemprop="dateModified" datetime="2019-01-26T11:35:53+08:00">2019-01-26</time>
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -313,25 +420,31 @@
 
       
         
-          
-          Python爬虫获取页面基本框架1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556import requestsimport random# 获
-          ...
+          <p>基于Python、requests库<br>对qq音乐分类目录下按list爬取歌曲信息，并实现歌曲下载<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/cuizhengliang.github.io/2018/11/29/Python爬虫/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cuizhengliang.github.io/2018/11/29/Python爬虫/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
-    </div>
+    </p></div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -364,132 +477,6 @@
   
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cuizhengliang.github.io/cuizhengliang.github.io/2018/11/01/Python——开始/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="CuiZhengliang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/cuizhengliang.github.io/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/cuizhengliang.github.io/2018/11/01/Python——开始/" itemprop="url">Python—开始</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-01T00:00:00+08:00">
-                2018-11-01
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          Python学习——开始PyCharm安装注意事项由于Python、PyCharm、anaconda的安装介绍已经不胜枚举，我就直接忽略了。值得注意的是有一些安装后配置的小细节，或许有些需要注意。
-
-Python2、Python3的两个版本如果同时安装的话，系统(win)只能使用其中一个解释器运行当
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/cuizhengliang.github.io/2018/11/01/Python——开始/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
   
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
@@ -501,7 +488,7 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CuiZhengliang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="崔正亮">
       <meta itemprop="image" content="/cuizhengliang.github.io/images/avatar.gif">
     </span>
 
@@ -516,11 +503,20 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/cuizhengliang.github.io/2018/11/01/Python——函数与方法/" itemprop="url">Python—函数与方法</a></h1>
+                
+                <a href="/cuizhengliang.github.io/2018/11/01/Python——函数与方法/" class="post-title-link" itemprop="url">Python—函数与方法</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -528,19 +524,37 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-01T00:00:00+08:00">
-                2018-11-01
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-01T00:00:00+08:00">2018-11-01</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-26 11:54:33" itemprop="dateModified" datetime="2019-01-26T11:54:33+08:00">2019-01-26</time>
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -567,26 +581,31 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
       
         
-          
-          Python自学——函数函数1234567#简单的函数格式def func(n):	'这里是函数说明，可以通过__doc__属性调用'	n+=1	print(n)func(5)		# 调用函数
-函数的特殊点是函数的参数传递：Python中的参数分为：可变对象和不可变对象。可变对象：List、Set不
-          ...
+          <p>Python函数语法、闭包<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/cuizhengliang.github.io/2018/11/01/Python——函数与方法/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cuizhengliang.github.io/2018/11/01/Python——函数与方法/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
-    </div>
+    </p></div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -619,16 +638,18 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
   
   
 
+  
+
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://cuizhengliang.github.io/cuizhengliang.github.io/2018/10/31/第一篇博文/">
+    <link itemprop="mainEntityOfPage" href="https://cuizhengliang.github.io/cuizhengliang.github.io/2018/11/01/Python——开始/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CuiZhengliang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="崔正亮">
       <meta itemprop="image" content="/cuizhengliang.github.io/images/avatar.gif">
     </span>
 
@@ -643,11 +664,20 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/cuizhengliang.github.io/2018/10/31/第一篇博文/" itemprop="url">第一篇博文</a></h1>
+                
+                <a href="/cuizhengliang.github.io/2018/11/01/Python——开始/" class="post-title-link" itemprop="url">Python—开始</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -655,19 +685,198 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-31T21:14:18+08:00">
-                2018-10-31
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-01T00:00:00+08:00">2018-11-01</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-26 11:53:56" itemprop="dateModified" datetime="2019-01-26T11:53:56+08:00">2019-01-26</time>
+              
             
           </span>
 
           
 
           
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>PyCharm安装<br>基本语法<br>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cuizhengliang.github.io/2018/11/01/Python——开始/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </p></div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://cuizhengliang.github.io/cuizhengliang.github.io/2018/10/31/第一篇博文/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CuiZhengliang">
+      <meta itemprop="description" content="崔正亮">
+      <meta itemprop="image" content="/cuizhengliang.github.io/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/cuizhengliang.github.io/2018/10/31/第一篇博文/" class="post-title-link" itemprop="url">第一篇博文</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-10-31 21:14:18" itemprop="dateCreated datePublished" datetime="2018-10-31T21:14:18+08:00">2018-10-31</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-26 10:47:22" itemprop="dateModified" datetime="2019-01-26T10:47:22+08:00">2019-01-26</time>
+              
+            
+          </span>
+
+          
+
+          
+            
             
           
 
@@ -695,25 +904,35 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
       
         
           
-          Welcome to CuiZhengliang’s Studio.记录成长，分享生活。
+            <p>
+              Welcome to CuiZhengliang’s Studio.记录成长，分享生活。
 
-          
+              
+            </p>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/cuizhengliang.github.io/2018/10/31/第一篇博文/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/cuizhengliang.github.io/2018/10/31/第一篇博文/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -746,9 +965,6 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -769,7 +985,7 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -777,48 +993,73 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
               <p class="site-description motion-element" itemprop="description">崔正亮</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/cuizhengliang.github.io/archives/">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
+                <div class="site-state-item site-state-posts">
                 
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">tags</span>
+                  <a href="/cuizhengliang.github.io/archives/">
                 
-              </div>
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/cuizhengliang.github.io/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/cuizhengliang" title="GitHub &rarr; https://github.com/cuizhengliang" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
             
-
-          </nav>
-
           
-
-          
-
-          
-          
-
-          
-          
-
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -835,16 +1076,18 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">CuiZhengliang</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -852,12 +1095,13 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
 
 
 
 
         
+
 
 
 
@@ -878,11 +1122,14 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -896,7 +1143,6 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
 
 
-  
 
 
 
@@ -909,88 +1155,48 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
 
 
 
-  
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/jquery/index.js?v=2.1.3"></script>
-  
+
+
+
+
 
   
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
+  <script src="/cuizhengliang.github.io/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
+  <script src="/cuizhengliang.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
+  <script src="/cuizhengliang.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/utils.js?v=5.1.4"></script>
+  <script src="/cuizhengliang.github.io/js/src/utils.js?v=6.7.0"></script>
 
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/motion.js?v=5.1.4"></script>
+  <script src="/cuizhengliang.github.io/js/src/motion.js?v=6.7.0"></script>
 
 
 
   
   
 
-  
 
-  
-
-
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/bootstrap.js?v=5.1.4"></script>
+  <script src="/cuizhengliang.github.io/js/src/schemes/muse.js?v=6.7.0"></script>
 
 
 
   
 
-
   
 
 
-
-
-	
-
-
+  <script src="/cuizhengliang.github.io/js/src/bootstrap.js?v=6.7.0"></script>
 
 
 
   
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1007,6 +1213,17 @@ Python2、Python3的两个版本如果同时安装的话，系统(win)只能使�
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   

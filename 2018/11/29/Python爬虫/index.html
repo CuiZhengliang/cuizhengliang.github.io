@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next muse use-motion" lang="">
+<html class="theme-next muse use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -38,9 +45,22 @@
 
 
 
-  
-  
-  <link href="/cuizhengliang.github.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="/cuizhengliang.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/cuizhengliang.github.io/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/cuizhengliang.github.io/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/cuizhengliang.github.io/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/cuizhengliang.github.io/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/cuizhengliang.github.io/images/logo.svg?v=6.7.0" color="#222">
 
 
 
@@ -48,66 +68,18 @@
 
 
 
-<link href="/cuizhengliang.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/cuizhengliang.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/cuizhengliang.github.io/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/cuizhengliang.github.io/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/cuizhengliang.github.io/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/cuizhengliang.github.io/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Python,爬虫,">
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="Python爬虫获取页面基本框架1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556import requestsimport random# 获取HTML网页文本信息（源码）的一般方法def getHTMLText(url):    &apos;getH">
-<meta name="keywords" content="Python,爬虫">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Python爬虫">
-<meta property="og:url" content="https://cuizhengliang.github.io/2018/11/29/Python爬虫/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Python爬虫获取页面基本框架1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556import requestsimport random# 获取HTML网页文本信息（源码）的一般方法def getHTMLText(url):    &apos;getH">
-<meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-26T02:47:24.159Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python爬虫">
-<meta name="twitter:description" content="Python爬虫获取页面基本框架1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556import requestsimport random# 获取HTML网页文本信息（源码）的一般方法def getHTMLText(url):    &apos;getH">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/cuizhengliang.github.io/',
     scheme: 'Muse',
-    version: '5.1.4',
+    version: '6.7.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -119,12 +91,38 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="基于Python、requests库对qq音乐分类目录下按list爬取歌曲信息，并实现歌曲下载">
+<meta name="keywords" content="Python,爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python爬虫">
+<meta property="og:url" content="https://cuizhengliang.github.io/2018/11/29/Python爬虫/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基于Python、requests库对qq音乐分类目录下按list爬取歌曲信息，并实现歌曲下载">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-01-26T03:35:53.517Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Python爬虫">
+<meta name="twitter:description" content="基于Python、requests库对qq音乐分类目录下按list爬取歌曲信息，并实现歌曲下载">
+
+
+
+
+
 
   <link rel="canonical" href="https://cuizhengliang.github.io/2018/11/29/Python爬虫/">
 
 
 
-
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>Python爬虫 | Hexo</title>
   
@@ -136,9 +134,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="default">
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="en">
 
   
   
@@ -150,7 +177,7 @@
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -160,13 +187,12 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -174,45 +200,89 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/cuizhengliang.github.io/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            Home
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/cuizhengliang.github.io/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            Tags
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/cuizhengliang.github.io/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            Archives
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>About</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>Tags</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/cuizhengliang.github.io/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>Archives</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -220,12 +290,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
 
@@ -238,6 +316,8 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
   
   
@@ -247,7 +327,7 @@
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CuiZhengliang">
-      <meta itemprop="description" content="">
+      <meta itemprop="description" content="崔正亮">
       <meta itemprop="image" content="/cuizhengliang.github.io/images/avatar.gif">
     </span>
 
@@ -260,11 +340,20 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python爬虫</h1>
+          <h1 class="post-title" itemprop="name headline">Python爬虫
+
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -272,19 +361,37 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-29T00:00:00+08:00">
-                2018-11-29
-              </time>
+
+              
+                
+              
+
+              <time title="Created: 2018-11-29 00:00:00" itemprop="dateCreated datePublished" datetime="2018-11-29T00:00:00+08:00">2018-11-29</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-01-26 11:35:53" itemprop="dateModified" datetime="2019-01-26T11:35:53+08:00">2019-01-26</time>
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -310,7 +417,9 @@
       
 
       
-        <h1 id="Python爬虫"><a href="#Python爬虫" class="headerlink" title="Python爬虫"></a>Python爬虫</h1><h2 id="获取页面基本框架"><a href="#获取页面基本框架" class="headerlink" title="获取页面基本框架"></a>获取页面基本框架</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取HTML网页文本信息（源码）的一般方法</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">'getHTMLText用来获取网页源码html'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行浏览器欺骗</span></span><br><span class="line">    user_agent_list = [\</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"</span></span><br><span class="line">    ]</span><br><span class="line">    ua = random.choice(user_agent_list)</span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">'Accept-Encoding'</span>: <span class="string">'gzip, deflate, sdch, br'</span>,</span><br><span class="line">        <span class="string">'Accept-Language'</span>: <span class="string">'zh-CN,zh;q=0.8'</span>,</span><br><span class="line">        <span class="string">'Connection'</span>: <span class="string">'keep-alive'</span>,</span><br><span class="line">        <span class="string">'Referer'</span>: <span class="string">'https://www.jianshu.com/'</span>,</span><br><span class="line">        <span class="string">'User-Agent'</span>: ua</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 此处注释选用为高匿伪装IP，进行IP欺骗</span></span><br><span class="line">        <span class="comment"># proxies = &#123;</span></span><br><span class="line">        <span class="comment">#     'http': 'http://121.31.195.209:8123',</span></span><br><span class="line">        <span class="comment">#     'https': 'https://101.236.55.145:8866'</span></span><br><span class="line">        <span class="comment"># &#125;</span></span><br><span class="line"></span><br><span class="line">        r = requests.get(url, headers=headers, timeout=<span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Requests Error'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    keyword = <span class="string">'%CA%D6%BB%FA'</span> <span class="comment"># 此字符串是搜索汉字字符的转码，这里例子是‘手机’</span></span><br><span class="line">    <span class="comment"># pages = '1'   # 以第一页为例</span></span><br><span class="line">    url = <span class="string">'http://search.dangdang.com/?key='</span> + keyword + <span class="string">'&amp;act=input'</span></span><br><span class="line">    print(getHTMLText(url))</span><br></pre></td></tr></table></figure>
+        <p>基于Python、requests库<br>对qq音乐分类目录下按list爬取歌曲信息，并实现歌曲下载<br><a id="more"></a></p>
+<hr>
+<h1 id="QQ音乐爬虫"><a href="#QQ音乐爬虫" class="headerlink" title="QQ音乐爬虫"></a>QQ音乐爬虫</h1><h2 id="获取页面基本框架"><a href="#获取页面基本框架" class="headerlink" title="获取页面基本框架"></a>获取页面基本框架</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取HTML网页文本信息（源码）的一般方法</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getHTMLText</span><span class="params">(url)</span>:</span></span><br><span class="line">    <span class="string">'getHTMLText用来获取网页源码html'</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 进行浏览器欺骗</span></span><br><span class="line">    user_agent_list = [\</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; CrOS i686 2268.111.0) AppleWebKit/536.11 (KHTML, like Gecko) Chrome/20.0.1132.57 Safari/536.11"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1092.0 Safari/536.6"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.6 (KHTML, like Gecko) Chrome/20.0.1090.0 Safari/536.6"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.1 (KHTML, like Gecko) Chrome/19.77.34.5 Safari/537.1"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.9 Safari/536.5"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.0) AppleWebKit/536.5 (KHTML, like Gecko) Chrome/19.0.1084.36 Safari/536.5"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 5.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_0) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1063.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1062.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.1) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.1 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2) AppleWebKit/536.3 (KHTML, like Gecko) Chrome/19.0.1061.0 Safari/536.3"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"</span>, \</span><br><span class="line">        <span class="string">"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/535.24 (KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"</span></span><br><span class="line">    ]</span><br><span class="line">    ua = random.choice(user_agent_list)</span><br><span class="line">    headers = &#123;</span><br><span class="line">        <span class="string">'Accept-Encoding'</span>: <span class="string">'gzip, deflate, sdch, br'</span>,</span><br><span class="line">        <span class="string">'Accept-Language'</span>: <span class="string">'zh-CN,zh;q=0.8'</span>,</span><br><span class="line">        <span class="string">'Connection'</span>: <span class="string">'keep-alive'</span>,</span><br><span class="line">        <span class="string">'Referer'</span>: <span class="string">'https://www.jianshu.com/'</span>,</span><br><span class="line">        <span class="string">'User-Agent'</span>: ua</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># 此处注释选用为高匿伪装IP，进行IP欺骗</span></span><br><span class="line">        <span class="comment"># proxies = &#123;</span></span><br><span class="line">        <span class="comment">#     'http': 'http://121.31.195.209:8123',</span></span><br><span class="line">        <span class="comment">#     'https': 'https://101.236.55.145:8866'</span></span><br><span class="line">        <span class="comment"># &#125;</span></span><br><span class="line"></span><br><span class="line">        r = requests.get(url, headers=headers, timeout=<span class="number">30</span>)</span><br><span class="line">        r.raise_for_status()</span><br><span class="line">        r.encoding = r.apparent_encoding</span><br><span class="line">        <span class="keyword">return</span> r.text</span><br><span class="line">    <span class="keyword">except</span>:</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'Requests Error'</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">    keyword = <span class="string">'%CA%D6%BB%FA'</span> <span class="comment"># 此字符串是搜索汉字字符的转码，这里例子是‘手机’</span></span><br><span class="line">    <span class="comment"># pages = '1'   # 以第一页为例</span></span><br><span class="line">    url = <span class="string">'http://search.dangdang.com/?key='</span> + keyword + <span class="string">'&amp;act=input'</span></span><br><span class="line">    print(getHTMLText(url))</span><br></pre></td></tr></table></figure>
 <p>上面是一个爬取html页面的通用代码，本来我是不打算写伪装浏览器那一部分的，但是木有想到随手试了淘宝、知乎等等全被挡住了，无奈之下还是伪装了一下。</p>
 <p>当然，简单爬取的时候没必要写随机浏览器列表，用其中一个就可以了。</p>
 <p>如果需要提升爬取速度，可以把<kbd>r.encoding =  r.apperant_encoding</kbd>改为<kbd>r.encoding = ‘utf-8’</kbd></p>
@@ -320,12 +429,18 @@
 
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -349,8 +464,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/cuizhengliang.github.io/2018/11/01/Python——开始/" rel="next" title="Python—开始">
-                <i class="fa fa-chevron-left"></i> Python—开始
+              <a href="/cuizhengliang.github.io/2018/11/01/Python——函数与方法/" rel="next" title="Python—函数与方法">
+                <i class="fa fa-chevron-left"></i> Python—函数与方法
               </a>
             
           </div>
@@ -373,17 +488,10 @@
   </article>
 
 
-
-    <div class="post-spread">
-      
-    </div>
   </div>
 
 
           </div>
-          
-
-
           
 
   
@@ -419,7 +527,7 @@
         </ul>
       
 
-      <section class="site-overview-wrap sidebar-panel">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -427,64 +535,90 @@
               <p class="site-description motion-element" itemprop="description">崔正亮</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/cuizhengliang.github.io/archives/">
-              
-                  <span class="site-state-item-count">4</span>
-                  <span class="site-state-item-name">posts</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
+                <div class="site-state-item site-state-posts">
                 
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">tags</span>
+                  <a href="/cuizhengliang.github.io/archives/">
                 
-              </div>
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/cuizhengliang.github.io/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/cuizhengliang" title="GitHub &rarr; https://github.com/cuizhengliang" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
             
-
-          </nav>
-
           
-
-          
-
-          
-          
-
-          
-          
-
           
 
         </div>
-      </section>
+      </div>
 
       
       <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
           <div class="post-toc">
 
             
-              
+            
+            
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python爬虫"><span class="nav-number">1.</span> <span class="nav-text">Python爬虫</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获取页面基本框架"><span class="nav-number">1.1.</span> <span class="nav-text">获取页面基本框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找目标数据基本框架"><span class="nav-number">1.2.</span> <span class="nav-text">查找目标数据基本框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">1.3.</span> <span class="nav-text">闭包</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#QQ音乐爬虫"><span class="nav-number">1.</span> <span class="nav-text">QQ音乐爬虫</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#获取页面基本框架"><span class="nav-number">1.1.</span> <span class="nav-text">获取页面基本框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找目标数据基本框架"><span class="nav-number">1.2.</span> <span class="nav-text">查找目标数据基本框架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#闭包"><span class="nav-number">1.3.</span> <span class="nav-text">闭包</span></a></li></ol></li></ol></div>
             
 
           </div>
-        </section>
+        </div>
       <!--/noindex-->
       
 
@@ -501,16 +635,18 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">CuiZhengliang</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.8.0</div>
 
 
 
@@ -518,12 +654,13 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.7.0</div>
 
 
 
 
         
+
 
 
 
@@ -544,11 +681,14 @@
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -562,7 +702,6 @@
 
 
 
-  
 
 
 
@@ -575,59 +714,48 @@
 
 
 
-  
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/jquery/index.js?v=2.1.3"></script>
-  
+
+
+
+
 
   
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
+  <script src="/cuizhengliang.github.io/lib/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
+  <script src="/cuizhengliang.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/cuizhengliang.github.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
+  <script src="/cuizhengliang.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/utils.js?v=5.1.4"></script>
+  <script src="/cuizhengliang.github.io/js/src/utils.js?v=6.7.0"></script>
 
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/motion.js?v=5.1.4"></script>
+  <script src="/cuizhengliang.github.io/js/src/motion.js?v=6.7.0"></script>
 
 
 
   
   
 
-  
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/cuizhengliang.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+  <script src="/cuizhengliang.github.io/js/src/schemes/muse.js?v=6.7.0"></script>
 
 
 
   
+  <script src="/cuizhengliang.github.io/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/cuizhengliang.github.io/js/src/post-details.js?v=6.7.0"></script>
 
 
-  <script type="text/javascript" src="/cuizhengliang.github.io/js/src/bootstrap.js?v=5.1.4"></script>
+
+  
+
+
+  <script src="/cuizhengliang.github.io/js/src/bootstrap.js?v=6.7.0"></script>
 
 
 
@@ -635,33 +763,6 @@
 
 
   
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
 
 
   
@@ -677,6 +778,17 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
